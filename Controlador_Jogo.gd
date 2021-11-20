@@ -1,40 +1,44 @@
 extends Node
 
 
-
-
-
-
-
-###Modificar código abaixo para não pegar o texto DROPPADO no arquivo, mas sim o caminho que queremos
-
-var filePath:String #caminho do arquivo
-var loadedFile:File = File.new() #Segura a informação vindo do arquivo
-var palavras:String
+#var filePath = "res://Palavras_em_br-utf8.txt"
+var filePath = "res://Texto/Palavras_em_br-utf8.txt"
+var palavras:PoolStringArray
 
 func _ready():
-	#Pegar sinal do evento de Arquivo (File) que fica na scene tree do godot
-	#Sinal para quando files são dropados
-	#Conectar sinal
-	#pegar caminho().conectar sinal.(nome do sinal", o proprio documento (this), a função que conectaremos)
-	get_tree().connect("files_dropped", self, "_getDroppedFilesPath")
-	#"files_dropped retorna o caminho, arquivos em array (então a função tem que receber argumento em array)
-	#também retorna qual "tela" (screen) o aplicativo está rodando
-	pass
-	
-#Função para pegar o caminho do arquivo que trouxermos à aplicação
-func _getDroppedFilesPath(files:PoolStringArray, screen:int) -> void: #você pode ter vários arquivos dropados ao mesmo tempo, armazenados no array
-	#como só usando um arquivo, usar o primeiro arquivo
-	filePath = files[0] #carrega o primeiro arquivo e pega caminho
-	_setText()	
+	Iniciar()
 	
 	
-#Função para pegarmos o texto
-func _setText()->void:
-	loadedFile.open(filePath,_File.READ) #Abre o arquivo encontrado
-	palavras = loadedFile.get_as_text() #pega o texto 
-	loadedFile.close() #Fecha o arquivo
 	
+func Iniciar():
+	palavras.append_array(Load_File())
+	
+	
+func Load_File():
+	var file = File.new()
+	var content:PoolStringArray
+	file.open(filePath, File.READ)
+	while !file.eof_reached():
+		content.append(file.get_line())
+	#var content = file.get_as_text()
+	file.close()
+	return content
+
+
+func EscolherPalavraInicial(): #Palavra
+	return palavras[randi() % palavras.size()]
+	#var pChave = ControladorJogo.palavras[rand_range(0,ControladorJogo.palavras.size())]
+	
+	
+func EscolherNovaPalavra(var p:String):#Palavra e UltimaPalavra
+	var uP = p
+	p = palavras[randi() % palavras.size()]
+	if p == uP:
+		EscolherNovaPalavra(p)
+	else:
+		return p
+	
+###Modificar código abaixo para não pegar o texto DROPPADO no arquivo, mas sim o caminho que queremos
 
 
 ######Tentativa antiga######
