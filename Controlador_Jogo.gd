@@ -4,6 +4,12 @@ extends Node
 #var filePath = "res://Palavras_em_br-utf8.txt"
 var filePath = "res://Texto/Palavras_em_br-utf8.txt"
 var palavras:PoolStringArray
+enum nivel  {
+	facil
+	medio
+	dificil
+}
+
 
 func _ready():
 	Iniciar()
@@ -16,7 +22,7 @@ func Iniciar():
 	
 func Load_File():
 	var file = File.new()
-	var content:PoolStringArray
+	var content:PoolStringArray #fazer verificação depois
 	file.open(filePath, File.READ)
 	while !file.eof_reached():
 		content.append(file.get_line())

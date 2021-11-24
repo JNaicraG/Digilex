@@ -5,7 +5,7 @@
 [ext_resource path="res://Fontes/GOTHAM-BLACK.OTF" type="DynamicFontData" id=3]
 [ext_resource path="res://Cenas/Menus/Pontuacao.gd" type="Script" id=4]
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=1]
 draw_center = false
 border_width_left = 2
 border_width_top = 2
@@ -20,21 +20,21 @@ expand_margin_right = 2.0
 expand_margin_top = 1.0
 expand_margin_bottom = 1.0
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=2]
 size = 75
 outline_color = Color( 0.388235, 0.784314, 0.164706, 1 )
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=3]
 size = 18
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=5]
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 3 )
@@ -100,8 +100,8 @@ margin_top = 150.0
 margin_right = 457.0
 margin_bottom = 221.0
 grow_horizontal = 0
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 custom_constants/line_spacing = 1
 text = "Pontuação"
 align = 1
@@ -126,7 +126,7 @@ margin_top = 64.0
 margin_right = 640.0
 margin_bottom = 414.0
 rect_min_size = Vector2( 0, 350 )
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 3 )
 custom_constants/hseparation = 8
 __meta__ = {
 "_editor_description_": "Tabela de Pontuações"
@@ -139,7 +139,7 @@ margin_left = 4.0
 margin_top = 35.0
 margin_right = -4.0
 margin_bottom = -4.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/TabContainer/Nível 1"]
 margin_right = 500.0
@@ -178,7 +178,7 @@ __meta__ = {
 margin_left = 12.0
 margin_right = 486.0
 margin_bottom = 18.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Nome"
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/TabContainer/Nível 1/VBoxContainer/Margin_NomePonto/HSplitContainer/MarginContainer"]
@@ -195,7 +195,7 @@ __meta__ = {
 margin_left = 400.0
 margin_right = 458.0
 margin_bottom = 18.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Pontos"
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/TabContainer/Nível 1/VBoxContainer"]
@@ -224,7 +224,7 @@ margin_left = 4.0
 margin_top = 35.0
 margin_right = -4.0
 margin_bottom = -4.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 
 [node name="Voltar ao Menu" type="MarginContainer" parent="MarginContainer/VBoxC_Janela"]
 margin_top = 824.0
@@ -250,7 +250,7 @@ margin_bottom = 64.0
 rect_min_size = Vector2( 0, 64 )
 rect_clip_content = true
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 5 )
 text = "Voltar ao Menu"
 
 [connection signal="pressed" from="MarginContainer/VBoxC_Janela/Voltar ao Menu/MarginContainer3/ButtonMenu" to="." method="_on_ButtonMenu_pressed"]
