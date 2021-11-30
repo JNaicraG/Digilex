@@ -58,7 +58,7 @@ __meta__ = {
 [node name="VBoxC_Janela" type="VBoxContainer" parent="MarginContainer"]
 margin_left = 32.0
 margin_top = 32.0
-margin_right = 699.0
+margin_right = 992.0
 margin_bottom = 1005.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
@@ -68,13 +68,13 @@ __meta__ = {
 }
 
 [node name="CenterContainer_Titulo" type="CenterContainer" parent="MarginContainer/VBoxC_Janela"]
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 351.0
 size_flags_vertical = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/CenterContainer_Titulo"]
-margin_left = 76.0
-margin_right = 590.0
+margin_left = 223.0
+margin_right = 737.0
 margin_bottom = 351.0
 custom_constants/margin_top = 150
 custom_constants/margin_bottom = 130
@@ -93,7 +93,7 @@ valign = 1
 
 [node name="MarginContainer_Buttons" type="MarginContainer" parent="MarginContainer/VBoxC_Janela"]
 margin_top = 355.0
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 973.0
 size_flags_vertical = 2
 custom_constants/margin_top = 64
@@ -104,11 +104,11 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons"]
 margin_top = 64.0
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 618.0
 
 [node name="Nome do Jogador" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 120.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -118,23 +118,23 @@ custom_constants/margin_bottom = 32
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 587.0
+margin_right = 880.0
 margin_bottom = 88.0
 custom_constants/margin_right = 76
 custom_constants/margin_left = 76
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 56.0
 custom_constants/margin_right = 100
 custom_constants/margin_left = 100
 custom_constants/margin_bottom = 32
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador/MarginContainer3/MarginContainer2"]
+[node name="NomeLabel" type="Label" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador/MarginContainer3/MarginContainer2"]
 margin_left = 100.0
 margin_top = 3.0
-margin_right = 255.0
+margin_right = 548.0
 margin_bottom = 21.0
 custom_fonts/font = SubResource( 3 )
 text = "Nome do Jogador"
@@ -142,7 +142,7 @@ align = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 56.0
 custom_constants/margin_right = 0
 custom_constants/margin_top = 32
@@ -150,13 +150,13 @@ custom_constants/margin_left = 0
 
 [node name="InputNome" type="LineEdit" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador/MarginContainer3/MarginContainer"]
 margin_top = 32.0
-margin_right = 355.0
+margin_right = 648.0
 margin_bottom = 56.0
 rect_min_size = Vector2( 250, 0 )
 
 [node name="Volume" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
 margin_top = 124.0
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 238.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -166,14 +166,14 @@ custom_constants/margin_bottom = 32
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 587.0
+margin_right = 880.0
 margin_bottom = 82.0
 custom_constants/margin_right = 76
 custom_constants/margin_left = 76
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 50.0
 custom_constants/margin_right = 0
 custom_constants/margin_top = 32
@@ -181,7 +181,7 @@ custom_constants/margin_left = 0
 
 [node name="SliderVolume" type="HSlider" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3/MarginContainer"]
 margin_top = 32.0
-margin_right = 355.0
+margin_right = 648.0
 margin_bottom = 48.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -189,7 +189,7 @@ __meta__ = {
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 50.0
 custom_constants/margin_right = 100
 custom_constants/margin_left = 100
@@ -197,7 +197,7 @@ custom_constants/margin_bottom = 32
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3/MarginContainer2"]
 margin_left = 100.0
-margin_right = 255.0
+margin_right = 548.0
 margin_bottom = 18.0
 custom_fonts/font = SubResource( 3 )
 text = "Volume"
@@ -206,19 +206,19 @@ valign = 1
 
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 50.0
 
 [node name="VolTexto" type="Label" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3/MarginContainer3"]
 margin_top = 18.0
-margin_right = 355.0
+margin_right = 648.0
 margin_bottom = 32.0
 text = "12"
 align = 2
 
 [node name="Tamanho da Fonte" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
 margin_top = 242.0
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 358.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -228,14 +228,14 @@ custom_constants/margin_bottom = 32
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Tamanho da Fonte"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 587.0
+margin_right = 880.0
 margin_bottom = 84.0
 custom_constants/margin_right = 76
 custom_constants/margin_left = 76
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Tamanho da Fonte/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 52.0
 custom_constants/margin_right = 100
 custom_constants/margin_left = 100
@@ -244,7 +244,7 @@ custom_constants/margin_bottom = 32
 [node name="Label" type="Label" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Tamanho da Fonte/MarginContainer3/MarginContainer2"]
 margin_left = 100.0
 margin_top = 1.0
-margin_right = 255.0
+margin_right = 548.0
 margin_bottom = 19.0
 custom_fonts/font = SubResource( 3 )
 text = "Tamanho da Fonte"
@@ -252,13 +252,13 @@ align = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Tamanho da Fonte/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 52.0
 custom_constants/margin_top = 32
 
 [node name="dropdown" type="OptionButton" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Tamanho da Fonte/MarginContainer3/MarginContainer"]
 margin_top = 32.0
-margin_right = 355.0
+margin_right = 648.0
 margin_bottom = 52.0
 text = "Pequeno"
 align = 1
@@ -271,7 +271,7 @@ __meta__ = {
 
 [node name="Voltar ao Menu" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
 margin_top = 362.0
-margin_right = 667.0
+margin_right = 960.0
 margin_bottom = 554.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 88
@@ -281,14 +281,14 @@ custom_constants/margin_bottom = 40
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Voltar ao Menu"]
 margin_left = 80.0
 margin_top = 88.0
-margin_right = 587.0
+margin_right = 880.0
 margin_bottom = 152.0
 custom_constants/margin_right = 76
 custom_constants/margin_left = 76
 
 [node name="ButtonMenu" type="Button" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Voltar ao Menu/MarginContainer3"]
 margin_left = 76.0
-margin_right = 431.0
+margin_right = 724.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 0, 64 )
 rect_clip_content = true
@@ -299,4 +299,4 @@ text = "Voltar ao Menu"
 [connection signal="text_changed" from="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Nome do Jogador/MarginContainer3/MarginContainer/InputNome" to="." method="_on_InputNome_text_changed"]
 [connection signal="value_changed" from="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Volume/MarginContainer3/MarginContainer/SliderVolume" to="." method="_on_SliderVolume_value_changed"]
 [connection signal="item_selected" from="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Tamanho da Fonte/MarginContainer3/MarginContainer/dropdown" to="." method="_on_dropdown_item_selected"]
-[connection signal="pressed" from="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Voltar ao Menu/MarginContainer3/ButtonMenu" to="." method="_on_ButtonPontos_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/Voltar ao Menu/MarginContainer3/ButtonMenu" to="." method="_on_ButtonMenu_pressed"]

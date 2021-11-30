@@ -71,7 +71,7 @@ __meta__ = {
 [node name="VBoxC_Janela" type="VBoxContainer" parent="MarginContainer"]
 margin_left = 32.0
 margin_top = 32.0
-margin_right = 688.0
+margin_right = 992.0
 margin_bottom = 992.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
@@ -81,13 +81,13 @@ __meta__ = {
 }
 
 [node name="CenterContainer_Titulo" type="CenterContainer" parent="MarginContainer/VBoxC_Janela"]
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 351.0
 size_flags_vertical = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/CenterContainer_Titulo"]
-margin_left = 74.0
-margin_right = 581.0
+margin_left = 226.0
+margin_right = 733.0
 margin_bottom = 351.0
 custom_constants/margin_right = 50
 custom_constants/margin_top = 150
@@ -109,21 +109,21 @@ valign = 1
 
 [node name="MarginContainer_Buttons" type="MarginContainer" parent="MarginContainer/VBoxC_Janela"]
 margin_top = 355.0
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 801.0
 size_flags_vertical = 2
-custom_constants/margin_right = 16
+custom_constants/margin_right = 186
 custom_constants/margin_top = 64
-custom_constants/margin_left = 16
+custom_constants/margin_left = 220
 custom_constants/margin_bottom = 32
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TabContainer" type="TabContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons"]
-margin_left = 16.0
+margin_left = 220.0
 margin_top = 64.0
-margin_right = 640.0
+margin_right = 774.0
 margin_bottom = 414.0
 rect_min_size = Vector2( 0, 350 )
 custom_fonts/font = SubResource( 3 )
@@ -228,7 +228,7 @@ custom_fonts/font = SubResource( 4 )
 
 [node name="Voltar ao Menu" type="MarginContainer" parent="MarginContainer/VBoxC_Janela"]
 margin_top = 824.0
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 960.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -238,14 +238,14 @@ custom_constants/margin_bottom = 40
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/Voltar ao Menu"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 576.0
+margin_right = 880.0
 margin_bottom = 96.0
 custom_constants/margin_right = 76
 custom_constants/margin_left = 76
 
 [node name="ButtonMenu" type="Button" parent="MarginContainer/VBoxC_Janela/Voltar ao Menu/MarginContainer3"]
 margin_left = 76.0
-margin_right = 420.0
+margin_right = 724.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 0, 64 )
 rect_clip_content = true

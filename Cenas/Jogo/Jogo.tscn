@@ -1,15 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Cenas/Extras/Peca.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Cenas/Jogo/Jogo.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Jogo/Jogo.gd" type="Script" id=2]
 [ext_resource path="res://Fontes/GOTHAMBOLDITALIC.TTF" type="DynamicFontData" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
-draw_center = false
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
+bg_color = Color( 0.352941, 0.333333, 0.333333, 1 )
 corner_radius_top_left = 4
 corner_radius_top_right = 4
 corner_radius_bottom_right = 4
@@ -24,13 +19,27 @@ size = 44
 outline_color = Color( 0.388235, 0.784314, 0.164706, 1 )
 font_data = ExtResource( 3 )
 
+[sub_resource type="VisualScript" id=3]
+data = {
+"base_type": "Label",
+"functions": [ {
+"data_connections": [  ],
+"function_id": -1,
+"name": "f_312843592",
+"nodes": [  ],
+"scroll": Vector2( -194, -41 ),
+"sequence_connections": [  ]
+} ],
+"is_tool_script": false,
+"signals": [  ],
+"variables": [  ],
+"vs_unify": true
+}
+
 [node name="Jogo" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="Peça" parent="." instance=ExtResource( 1 )]
-position = Vector2( 478.179, 551.199 )
-
-[node name="Titulo" type="Label" parent="."]
+[node name="Palavra-Chave" type="Label" parent="."]
 margin_left = 366.0
 margin_top = 327.524
 margin_right = 660.0
@@ -38,10 +47,10 @@ margin_bottom = 398.524
 grow_horizontal = 0
 custom_styles/normal = SubResource( 1 )
 custom_fonts/font = SubResource( 2 )
-custom_constants/line_spacing = 1
 text = "DigiLex"
 align = 1
 valign = 1
+script = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
