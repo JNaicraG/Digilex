@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fontes/GOTHAMBOLDITALIC.TTF" type="DynamicFontData" id=1]
-[ext_resource path="res://Cenas/Menus/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Menus/Menu.gd" type="Script" id=2]
 [ext_resource path="res://Fontes/GOTHAM-BLACK.OTF" type="DynamicFontData" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -54,7 +54,7 @@ __meta__ = {
 [node name="VBoxC_Janela" type="VBoxContainer" parent="MarginContainer"]
 margin_left = 32.0
 margin_top = 32.0
-margin_right = 688.0
+margin_right = 992.0
 margin_bottom = 992.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
@@ -64,13 +64,13 @@ __meta__ = {
 }
 
 [node name="CenterContainer_Titulo" type="CenterContainer" parent="MarginContainer/VBoxC_Janela"]
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 351.0
 size_flags_vertical = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/CenterContainer_Titulo"]
-margin_left = 87.0
-margin_right = 568.0
+margin_left = 283.0
+margin_right = 677.0
 margin_bottom = 351.0
 custom_constants/margin_right = 50
 custom_constants/margin_top = 150
@@ -80,19 +80,19 @@ custom_constants/margin_bottom = 130
 [node name="Titulo" type="Label" parent="MarginContainer/VBoxC_Janela/CenterContainer_Titulo/MarginContainer"]
 margin_left = 50.0
 margin_top = 150.0
-margin_right = 431.0
+margin_right = 344.0
 margin_bottom = 221.0
 grow_horizontal = 0
 custom_styles/normal = SubResource( 1 )
 custom_fonts/font = SubResource( 2 )
 custom_constants/line_spacing = 1
-text = "NEXTGEN"
+text = "DigiLex"
 align = 1
 valign = 1
 
 [node name="MarginContainer_Buttons" type="MarginContainer" parent="MarginContainer/VBoxC_Janela"]
 margin_top = 355.0
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 811.0
 size_flags_vertical = 2
 custom_constants/margin_top = 64
@@ -103,11 +103,11 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons"]
 margin_top = 64.0
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 456.0
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 128.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -117,7 +117,7 @@ custom_constants/margin_bottom = 32
 [node name="ButtonJogar" type="Button" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/MarginContainer"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 576.0
+margin_right = 880.0
 margin_bottom = 96.0
 rect_min_size = Vector2( 0, 64 )
 size_flags_horizontal = 7
@@ -127,7 +127,7 @@ text = "Jogar"
 
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
 margin_top = 132.0
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 260.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -137,7 +137,7 @@ custom_constants/margin_bottom = 32
 [node name="ButtonPontos" type="Button" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/MarginContainer3"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 576.0
+margin_right = 880.0
 margin_bottom = 96.0
 rect_min_size = Vector2( 0, 64 )
 rect_clip_content = true
@@ -147,7 +147,7 @@ text = "Pontuação"
 
 [node name="MarginContainer4" type="MarginContainer" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer"]
 margin_top = 264.0
-margin_right = 656.0
+margin_right = 960.0
 margin_bottom = 392.0
 custom_constants/margin_right = 80
 custom_constants/margin_top = 32
@@ -157,7 +157,7 @@ custom_constants/margin_bottom = 32
 [node name="ButtonConfigurar" type="Button" parent="MarginContainer/VBoxC_Janela/MarginContainer_Buttons/VBoxContainer/MarginContainer4"]
 margin_left = 80.0
 margin_top = 32.0
-margin_right = 576.0
+margin_right = 880.0
 margin_bottom = 96.0
 rect_min_size = Vector2( 0, 64 )
 rect_clip_content = true

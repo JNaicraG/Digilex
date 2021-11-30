@@ -16,11 +16,10 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ControladorJogo="*res://Cenas/Jogo/Controlador/Controlador_Jogo.tscn"
+ControladorJogo="*res://Scripts/Jogo/Controlador/Controlador_Jogo.tscn"
 
 [display]
 
-window/size/width=720
 window/size/height=1024
 window/size/test_width=1024
 window/size/test_height=1024

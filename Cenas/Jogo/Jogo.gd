@@ -18,15 +18,7 @@ func _process(delta):
 
 func IniciarJogo():
 	$"Palavra-Chave".text = pChave
-	var peca = $Peca
-	var label = $Peca/Label
-	for i in range(pChave.length()):
-		if(pChave[i] != '-'):
-			label.text += pChave[i]
-		#els
-			
-		
-		pass
+	
 	
 
 
@@ -45,4 +37,5 @@ func IniciarJogo():
 #		print("NÃO É NULL")
 #		for s in conteudo:
 #			print(s)
+
 

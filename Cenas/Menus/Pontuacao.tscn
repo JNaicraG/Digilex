@@ -3,7 +3,7 @@
 [ext_resource path="res://Fontes/GOTHAMBOLDITALIC.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Fontes/GOTHAMBOOK.TTF" type="DynamicFontData" id=2]
 [ext_resource path="res://Fontes/GOTHAM-BLACK.OTF" type="DynamicFontData" id=3]
-[ext_resource path="res://Cenas/Menus/Pontuacao.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Menus/Pontuacao.gd" type="Script" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 draw_center = false
