@@ -5,16 +5,30 @@ extends Node2D
 # var a = 2
 # var b = "text"
 var pChave:String #Palavra-Chave
-
+var sPChave:String#Separado por sílaba para protótipo
 func _ready():
 	pChave = ControladorJogo.EscolherPalavraInicial()
+	sPChave = ControladorJogo.EscolherSilabas()
 	print("palavra: ", pChave)
+	print("Sílaba inicial: ", sPChave)
+	#ControladorJogo.SepararSilabas(pChave)
 
 func _process(delta):
-	if Input.is_action_just_pressed("Teste"):
-		pChave = ControladorJogo.EscolherNovaPalavra(pChave)
-		print("Palavra Nova: ", pChave)
 	pass
+
+func IniciarJogo():
+	$"Palavra-Chave".text = pChave
+	var peca = $Peca
+	var label = $Peca/Label
+	for i in range(pChave.length()):
+		if(pChave[i] != '-'):
+			label.text += pChave[i]
+		#els
+			
+		
+		pass
+	
+
 
 #
 #func _ready():
