@@ -16,7 +16,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ControladorJogo="*res://Scripts/Jogo/Controlador/Controlador_Jogo.tscn"
+ControladorJogo="*res://Cenas/Jogo/Controlador_Jogo.tscn"
 
 [display]
 

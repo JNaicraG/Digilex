@@ -28,13 +28,6 @@ func _on_KinematicBody2D_input_event(viewport, event, shape_idx):
 	elif event is InputEventScreenTouch:
 		if event.pressed and event.get_index() == 0:
 			self.position = event.get_position()
-		
-
-
-func _on_Node2D_dragsignal():
-	
-	pass # Replace with function body.
-
 
 func _on_KinematicBody2D_dragsignal():
 	pass # Replace with function body.

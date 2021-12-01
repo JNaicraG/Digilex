@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
+[ext_resource path="res://Cenas/Extras/Peca.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Jogo/Jogo.gd" type="Script" id=2]
 [ext_resource path="res://Fontes/GOTHAMBOLDITALIC.TTF" type="DynamicFontData" id=3]
 
@@ -54,3 +55,25 @@ script = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 112.0
+margin_top = 428.0
+margin_right = 914.0
+margin_bottom = 623.0
+mouse_filter = 2
+custom_constants/separation = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 1020.0
+margin_bottom = 1022.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Peça" parent="MarginContainer" instance=ExtResource( 1 )]
+position = Vector2( 596.529, 390.764 )

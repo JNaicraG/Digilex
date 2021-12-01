@@ -1,6 +1,11 @@
 extends Node
 
+const tipoPeca = "Peca"
 
+func GetTipoPeca():
+	return tipoPeca
+
+var ContadorBlocos:int
 #var filePath = "res://Palavras_em_br-utf8.txt"
 var filePath = "res://Texto/Lista_Reduzida.txt"
 var filePathS = "res://Texto/Lista_Reduzida_Silabas.txt" #lita separada sílaba
