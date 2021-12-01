@@ -76,4 +76,5 @@ __meta__ = {
 }
 
 [node name="Peça" parent="MarginContainer" instance=ExtResource( 1 )]
-position = Vector2( 596.529, 390.764 )
+visible = false
+position = Vector2( 134.529, 92.764 )
